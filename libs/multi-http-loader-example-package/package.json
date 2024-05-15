@@ -1,5 +1,5 @@
 {
-  "name": "@idp-front/translate-multi-http-loader-example-package-example-package",
+  "name": "@idp-front/translate-multi-http-loader-example-package",
   "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^17.3.0",
