@@ -1,0 +1,8 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/libs/multi-http-loader-example-package",
+  "assets": ["assets/**"],
+  "lib": {
+    "entryFile": "src/public-api.ts"
+  }
+}

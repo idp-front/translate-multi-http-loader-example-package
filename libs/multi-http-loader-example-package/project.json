@@ -1,0 +1,36 @@
+{
+  "name": "multi-http-loader-example-package",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/multi-http-loader-example-package/src",
+  "prefix": "shared",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/multi-http-loader-example-package/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/multi-http-loader-example-package/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/multi-http-loader-example-package/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/multi-http-loader-example-package/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}
