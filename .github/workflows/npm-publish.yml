@@ -32,4 +32,4 @@ jobs:
       - run: cd ./dist/libs/multi-http-loader-example-package
       - run: npm publish --publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
