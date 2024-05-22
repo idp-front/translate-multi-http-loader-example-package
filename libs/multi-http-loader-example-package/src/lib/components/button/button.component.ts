@@ -7,7 +7,7 @@ import { PrizmButtonComponent } from '@prizm-ui/components';
   selector: 'shared-button',
   standalone: true,
   imports: [TranslateModule, PrizmButtonComponent],
-  template: `<button prizmButton>{{ 'Shared.Button' | translate }}</button>`,
+  template: `<button prizmButton>{{ 'Shared.ButtonComponent.Button' | translate }}</button>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ButtonComponent {}

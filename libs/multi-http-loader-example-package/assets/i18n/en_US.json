@@ -1,5 +1,7 @@
 {
   "Shared": {
-    "Button": "Button from npm package"
+    "ButtonComponent": {
+      "Button": "Button from npm package"
+    }
   }
 }

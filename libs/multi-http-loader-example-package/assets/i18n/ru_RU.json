@@ -1,5 +1,7 @@
 {
   "Shared": {
-    "Button": "Кнопка из npm пакета"
+    "ButtonComponent": {
+      "Button": "Кнопка из npm пакета"
+    }
   }
 }
